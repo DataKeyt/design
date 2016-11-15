@@ -1,0 +1,296 @@
+
+html {
+    background:url('../img/taust.png') repeat center top;
+}
+
+.container{
+    /* background:#FFFFCC;
+     opacity: 0.75;*/
+    max-width:960px;
+    margin:60px auto;
+    -webkit-box-shadow: 0px 0px 30px 0px #999;
+    box-shadow: 0px 0px 30px 0px #999;
+}
+.nav:before {
+
+    opacity: 0.5;
+}
+
+.nav {
+    padding-left: auto;
+    padding-right: auto;
+    opacity: 0.6;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: black;
+margin-top: 70px;
+-webkit-transform: skew(25deg, -4deg);
+-moz-transform: skew(25deg, -4deg); /* Firefox, other Gecko */
+-ms-transform: skew(25deg, -4deg); /* IE9 + */
+-o-transform: skew(25deg, -4deg); /* Opera */
+transform: skew(25deg, -4deg);
+
+}
+
+li {
+float: left;
+}
+
+.nav li {
+    margin-left: 0.5%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 86px 10px 86px;
+
+    /* for text angling */
+    /* -webkit-transform: skew(0deg, 0deg); /* Safari/Chrome, other WebKit
+     -moz-transform: skew(0deg, 0deg); /* Firefox, other Gecko
+     -ms-transform: skew(0deg, 0deg); /* IE9 +
+     -o-transform: skew(0deg, 0deg); /* Opera
+     transform: skew(0deg, 0deg);
+     */
+    font-family: 'Copperplate Gothic Light';
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 18.4px;
+}
+
+li a:hover {
+    color: lightgreen;
+    background-color: #111;
+}
+
+
+.active {
+    background-color: #339933;
+    border-radius: 5px;
+}
+.main-content{
+    margin-top: 100px;
+    padding:30px 30px 30px 30px;
+    overflow:auto;
+    line-height:24px;
+    font-size: 20px;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3{
+    font-family:"Times New Roman", Times, serif;
+    font-weight:normal;
+    color:#3b6a26;
+    text-transform:full-size-kana;
+}
+
+.main-content h1{
+    font-size:46px;
+    text-align:left;
+}
+
+.main-content a{
+    color:#3b6a26;
+}
+.translucent {
+    background-color: rgba(255, 255, 204, .5);
+}
+.sb-container {
+    position: relative;
+    width: 150px;
+    height: 400px;
+    margin: 30px auto 0 auto;
+}
+.sb-container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    background: #fff;
+    height: 400px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transform-origin: 25% 90%;
+    backface-visibility: hidden;
+}
+.sb-container div:nth-child(1){
+    background-color: #ea2a29;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 1px 1px 1px rgba(0,0,0,0.1);
+    background-image: url(http://vignette4.wikia.nocookie.net/blogclan/images/1/1c/Rainbow_Cat_Eye_by_digitalsprite.png/revision/latest?cb=20130622171116);
+
+}
+.sb-container div:nth-child(2){
+    background-color: #f16729;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 2px 2px 1px rgba(0,0,0,0.1);
+    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/b3/ba/65/b3ba65359251ff7fbbc152d8046cc6e6.jpg);
+}
+.sb-container div:nth-child(3){
+    background-color: #f89322;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 3px 3px 2px rgba(0,0,0,0.2);
+    background-image: url(http://orig08.deviantart.net/bdc6/f/2015/131/3/3/nyan_cat_3d_by_lipia_d5xkiq9_by_wolfywolf12345-d8t1l0e.jpg);
+}
+.sb-container div:nth-child(4){
+    background-color: #ffcf14;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 4px 4px 4px rgba(0,0,0,0.2);
+}
+.sb-container div:nth-child(5){
+    background-color: #ffea0d;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 5px 5px 6px rgba(0,0,0,0.3);
+}
+.sb-container div:nth-child(6){
+    background-color: #87b11d;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 6px 6px 8px rgba(0,0,0,0.3);
+}
+.sb-container div:nth-child(7){
+    background-color: #008253;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 7px 7px 10px rgba(0,0,0,0.4);
+}
+.sb-container div:nth-child(8){
+    background-color: #3277b5;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 8px 8px 12px rgba(0,0,0,0.4);
+}
+.sb-container div:nth-child(9){
+    background-color: #4c549f;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 9px 9px 14px rgba(0,0,0,0.4);
+}
+.sb-container div:nth-child(10){
+    background-color: #764394;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 10px 10px 16px rgba(0,0,0,0.4);
+}
+.sb-container div:nth-child(11){
+    background-color: #ca0d86;
+    box-shadow: -1px -1px 3px rgba(0,0,0,0.1), 11px 11px 18px rgba(0,0,0,0.4);
+}
+
+.sb-container div:last-child{
+    background: #645b5c url(http://digitalangeldonnadj.com/blog/wp-content/uploads/2011/09/nyan_cat_desktop_wallpaper_by_pepness-d3u17go.jpg) repeat center center;
+    box-shadow:
+            -1px -1px 3px rgba(0,0,0,0.2),
+            12px 12px 20px rgba(0,0,0,0.6),
+            inset 2px 2px 0 rgba(255, 255, 255, 0.1);
+}
+
+.sb-container div:last-child:after{
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #dddddd;
+    background: linear-gradient(135deg, #dddddd 0%,#58535e 48%,#889396 100%);
+    box-shadow: -1px -1px 1px rgba(0,0,0,0.5), 1px 1px 1px rgba(255,255,255,0.1);
+}
+.sb-container div h4{
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-top: 1px dashed rgba(0,0,0,0.1);
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    margin: 5px;
+    padding: 5px;
+    user-select: none;
+}
+.sb-container div:last-child h4{
+    background: rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(255,255,255,0.1);
+}
+.sb-container div:last-child h5{
+    font-size: 50px;
+    white-space: nowrap;
+    text-align: left;
+    margin-top: 100%;
+    padding: 0;
+    position: relative;
+    line-height: 50px;
+    top: 0px;
+    left: 0px;
+    color: ghostwhite;
+    text-shadow: -1px -1px 1px rgba(255,255,255,0.1);
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateX(-157%) translateY(73px);
+    transform-origin: 0 0;
+    user-select: none;
+}
+span.sb-icon{
+    display: block;
+    height: 70px;
+    width: 70px;
+    margin: 20px auto;
+    user-select: none;
+}
+span.sb-icon:before {
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+    text-decoration: inherit;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+    line-height: 64px;
+    width: 100%;
+    font-size: 60px;
+    color: #000;
+    text-shadow: 0 0 1px #000;
+
+}
+.icon-cog:before { content: '\35'; } /* '5' */
+.icon-flight:before { content: '\37'; } /* '7' */
+.icon-eye:before { content: '\34'; } /* '4' */
+.icon-install:before { content: '\39'; } /* '9' */
+.icon-bag:before { content: '\36'; } /* '6' */
+.icon-globe:before { content: '\38'; } /* '8' */
+.icon-picture:before { content: '\32'; } /* '2' */
+.icon-video:before { content: '\30'; } /* '0' */
+.icon-download:before { content: '\41'; } /* 'A' */
+.icon-mobile:before { content: '\42'; } /* 'B' */
+.icon-camera:before { content: '\33'; } /* '3' */
+
+#main form .arrow{
+    background: url("../img/arrow.png") no-repeat -10px 0;
+    height: 120px;
+    left: 214px;
+    position: absolute;
+    top: 392px;
+    width: 11px;
+
+    /* Defining a smooth CSS3 animation for turning the arrow */
+
+    -moz-transition:0.3s;
+    -webkit-transition:0.3s;
+    -o-transition:0.3s;
+    -ms-transition:0.3s;
+    transition:0.3s;
+
+    /* Putting the arrow in its initial position */
+
+    -moz-transform: rotate(-134deg);
+    -webkit-transform: rotate(-134deg);
+    -o-transform: rotate(-134deg);
+    -ms-transform: rotate(-134deg);
+    transform: rotate(-134deg);
+}
+
+/* The small piece that goes over the arrow */
+#main form .arrowCap{
+    background: url("../img/arrow.png") no-repeat -43px 0;
+    height: 20px;
+    left: 208px;
+    position: absolute;
+    top: 443px;
+    width: 20px;
+    z-index: 10;
+}

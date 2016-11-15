@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    <meta charset="UTF-8">
+    <title>CSS3 vs PhotoShop</title>
+</head>
+<body>
+<div class="header">
+    <div class="nav">
+        <?php
+        function echoActiveClassIfRequestMatches($requestUri)
+        {
+            $current_file_name = basename($_SERVER['REQUEST_URI'], ".php");
+
+            if ($current_file_name == $requestUri)
+                echo 'class="active"';
+        }
+        ?>
+        <ul>
+            <li ><a href="index.php" <?=echoActiveClassIfRequestMatches("index")?>>Home</a></li>
+            <li><a href="register.php" <?=echoActiveClassIfRequestMatches("register")?>>Register</a></li>
+            <li><a href="portfolio.php" <?=echoActiveClassIfRequestMatches("portfolio")?>>Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+</div>
+<div class="container">
+    <section class="box translucent">
+            <div id="dd" class="wrapper-dropdown-4">To-do list
+                <ul class="dropdown">
+                    <li><input type="checkbox" id="el-1" name="el-1" value="donut"><label for="el-1">Break a window</label></li>
+                    <li><input type="checkbox" id="el-2" name="el-2" value="neighbour"><label for="el-2">Spy on my neighbour's cat</label></li>
+                    <li><input type="checkbox" id="el-3" name="el-3" value="T-rex"><label for="el-3">Feed my T-Rex</label></li>
+                </ul>
+        </div>
+        </section>
+</div>
+<!-- JavaScript includes - jQuery, the complexify plugin and our own script.js -->
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="assets/js/jquery.complexify.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function DropDown(el) {
+        this.dd = el;
+        this.opts = this.dd.find('ul.dropdown > li');
+        this.val = [];
+        this.index = [];
+        this.initEvents();
+    }
+    DropDown.prototype = {
+        initEvents : function() {
+            var obj = this;
+
+            obj.dd.on('click', function(event){
+                $(this).toggleClass('active');
+                event.stopPropagation();
+            });
+
+            obj.opts.children('label').on('click',function(event){
+                var opt = $(this).parent(),
+                    chbox = opt.children('input'),
+                    val = chbox.val(),
+                    idx = opt.index();
+
+                ($.inArray(val, obj.val) !== -1) ? obj.val.splice( $.inArray(val, obj.val), 1 ) : obj.val.push( val );
+                ($.inArray(idx, obj.index) !== -1) ? obj.index.splice( $.inArray(idx, obj.index), 1 ) : obj.index.push( idx );
+            });
+        },
+        getValue : function() {
+            return this.val;
+        },
+        getIndex : function() {
+            return this.index;
+        }
+    }
+
+    $(function() {
+
+        var dd = new DropDown( $('#dd') );
+
+        $(document).click(function() {
+            // all dropdowns
+            $('.wrapper-dropdown-4').removeClass('active');
+        });
+
+    });
+
+</script>
+</body>
+</html>
